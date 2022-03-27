@@ -14,7 +14,7 @@ export default StyleSheet.create({
   },
   text: {
     marginRight: 15,
-    fontFamily: "henny-penny",
+    fontFamily: "henny-penny-regular",
     fontSize: 18,
   },
 });

@@ -1,13 +1,15 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useSelector } from "react-redux";
 
 import Day from "../../components/Day";
 
-import { days } from "./utils";
 import styles from "./styles";
 
 const DaysScreen = ({ navigation }) => {
+  const { days } = useSelector((state) => state.days)
+
   const handlePress = (day) => {
     navigation.navigate("Day", { day });
   };

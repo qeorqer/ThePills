@@ -18,6 +18,15 @@ const DaysNavigation = createStackNavigator({
   },
   {
     initialRouteName: "Days",
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: $background,
+      },
+      headerTitleStyle: {
+        fontFamily: 'henny-penny-regular'
+      },
+      headerTitleAlign: "center",
+    }
   },
 );
 

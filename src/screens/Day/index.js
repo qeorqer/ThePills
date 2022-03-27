@@ -1,11 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
+import { t } from "i18next";
 
 import styles from "./styles";
-import { useTranslation } from "react-i18next";
 
 const DayScreen = ({ navigation }) => {
-  const { t } = useTranslation();
 
   return (
     <View style={styles.container}>
@@ -16,13 +15,10 @@ const DayScreen = ({ navigation }) => {
 
 DayScreen.navigationOptions = ({ navigation }) => {
   const day = navigation.getParam("day", "Day");
+
   return (
     {
-      title: day.name,
-      headerTitleStyle: {
-        fontWeight: "bold",
-      },
-      headerTitleAlign: "center",
+      title: t(`days.${day.name || day}`),
     }
   );
 };

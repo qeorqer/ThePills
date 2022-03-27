@@ -4,13 +4,15 @@ import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 import { useState } from "react";
 import { Provider } from "react-redux";
+import "./i18next";
 
 import MainNavigator from "./src/navigation/MainNavigator";
 import { store } from "./src/store/index";
 
 const fetchFonts = () => {
   return Font.loadAsync({
-      "henny-penny": require("./assets/fonts/HennyPenny-Regular.ttf"),
+      "henny-penny-regular": require("./assets/fonts/HennyPenny-Regular.ttf"),
+      "oswald-regular": require("./assets/fonts/Oswald-Regular.ttf"),
     },
   );
 };
@@ -28,8 +30,8 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <StatusBar style='auto' />
       <MainNavigator />
+      <StatusBar style='auto' />
     </Provider>
   );
 };

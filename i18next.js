@@ -5,6 +5,7 @@ import translationEn from "./locales/en";
 i18n
   .use(initReactI18next)
   .init({
+    compatibilityJSON: 'v3',
     lng: "en",
     fallbackLng: "en",
     debug: true,
