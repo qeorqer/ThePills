@@ -9,10 +9,12 @@ export default StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
-    justifyContent: 'center',
-    alignItems:'flex-end',
+    justifyContent: "center",
+    alignItems: "flex-end",
   },
   text: {
     marginRight: 15,
-  }
+    fontFamily: "henny-penny",
+    fontSize: 18,
+  },
 });

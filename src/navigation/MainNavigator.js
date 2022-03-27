@@ -44,11 +44,11 @@ const TabNavigator = createBottomTabNavigator({
           switch (navigation.state.routeName) {
             default:
             case "Days":
-              return <DaysIcon width={30} height={30} style={!focused && { opacity: 0.7 }} />;
+              return <DaysIcon width={30} height={30} style={!focused && { opacity: 0.5 }} />;
             case "Profile":
-              return <ProfileIcon width={30} height={30} style={!focused && { opacity: 0.7 }} />;
+              return <ProfileIcon width={30} height={30} style={!focused && { opacity: 0.5 }} />;
             case "Settings":
-              return <SettingsIcon width={30} height={30} style={!focused && { opacity: 0.7 }} />;
+              return <SettingsIcon width={30} height={30} style={!focused && { opacity: 0.5 }} />;
           }
         },
       }),
