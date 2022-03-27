@@ -1,9 +1,12 @@
-import MainNavigator from "./src/navigation/MainNavigator";
+import "./i18next";
 import { StatusBar } from "expo-status-bar";
 import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 import { useState } from "react";
-import "./i18next";
+import { Provider } from "react-redux";
+
+import MainNavigator from "./src/navigation/MainNavigator";
+import { store } from "./src/store/index";
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -24,10 +27,10 @@ const App = () => {
   }
 
   return (
-    <>
+    <Provider store={store}>
       <StatusBar style='auto' />
       <MainNavigator />
-    </>
+    </Provider>
   );
 };
 
