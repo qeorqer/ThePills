@@ -1,5 +1,6 @@
 export default {
-  "pills screen": "some translated stuff",
+  "no reminders state": "You have no reminders yet",
+  "your reminders": "Your reminders",
   days: {
     "Monday": "Monday",
     "Tuesday": "Tuesday",

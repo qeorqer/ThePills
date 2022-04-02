@@ -3,11 +3,11 @@ import { t } from "i18next";
 
 import styles from "./styles";
 
-const CustomText = ({ text, textStyle = {}, variables = {} }) => (
+const CustomText = ({ text, textStyle = {}, variables = {}, translate = true }) => (
   <Text
     style={[styles.text, textStyle]}
   >
-    {t(text, variables)}
+    {translate ? t(text, variables) : text}
   </Text>
 );
 
