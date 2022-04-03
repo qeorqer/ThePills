@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
-import { $white } from "../../shared/colors";
+
+import { $white } from "@shared/colors";
 
 export default StyleSheet.create({
   container: {
@@ -10,6 +11,8 @@ export default StyleSheet.create({
     borderRadius: 5,
     paddingVertical: 5,
     paddingHorizontal: 10,
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 10,
   },
 });

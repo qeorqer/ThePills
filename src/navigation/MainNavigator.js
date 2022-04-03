@@ -3,14 +3,14 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 
-import DayScreen from "../screens/Day";
-import DaysScreen from "../screens/Days";
-import ProfileScreen from "../screens/Profile";
-import SettingsScreen from "../screens/Settings";
-import { $background, $black } from "../shared/colors";
-import SettingsIcon from "../../assets/icons/settings.svg";
-import ProfileIcon from "../../assets/icons/profile.svg";
-import DaysIcon from "../../assets/icons/days.svg";
+import DayScreen from "@screens/Day";
+import DaysScreen from "@screens/Days";
+import ProfileScreen from "@screens/Profile";
+import SettingsScreen from "@screens/Settings";
+import { $background, $black } from "@shared/colors";
+import SettingsIcon from "@icons/settings.svg";
+import ProfileIcon from "@icons/profile.svg";
+import DaysIcon from "@icons/days.svg";
 
 const DaysNavigation = createStackNavigator({
     Days: DaysScreen,

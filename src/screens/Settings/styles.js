@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
-import { $background } from "../../shared/colors";
+
+import { $background } from "@shared/colors";
 
 export default StyleSheet.create({
   container: {

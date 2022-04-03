@@ -4,15 +4,17 @@ import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 import { useState } from "react";
 import { Provider } from "react-redux";
-import "./i18next";
+import { PortalProvider } from "@gorhom/portal";
+import { gestureHandlerRootHOC } from "react-native-gesture-handler";
 
-import MainNavigator from "./src/navigation/MainNavigator";
-import { store } from "./src/store/index";
+import MainNavigator from "@navigation/MainNavigator";
+import { store } from "@store/index";
+import "./i18next";
 
 const fetchFonts = () => {
   return Font.loadAsync({
-      "henny-penny-regular": require("./assets/fonts/HennyPenny-Regular.ttf"),
-      "oswald-regular": require("./assets/fonts/Oswald-Regular.ttf"),
+      "henny-penny-regular": require("@fonts/HennyPenny-Regular.ttf"),
+      "oswald-regular": require("@fonts/Oswald-Regular.ttf"),
     },
   );
 };
@@ -30,10 +32,12 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <MainNavigator />
-      <StatusBar style='auto' />
+      <PortalProvider>
+          <MainNavigator />
+          <StatusBar style='auto' />
+      </PortalProvider>
     </Provider>
   );
 };
 
-export default App;
+export default gestureHandlerRootHOC(App);

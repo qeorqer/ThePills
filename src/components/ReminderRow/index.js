@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 
-import CustomText from "../CustomText";
+import CustomText from "@components/CustomText";
 
 import styles from "./styles";
 

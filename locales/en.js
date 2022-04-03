@@ -1,6 +1,10 @@
 export default {
   "no reminders state": "You have no reminders yet",
   "your reminders": "Your reminders",
+  "add reminder": "Add reminder",
+  "enter your note": "Enter your note",
+  note: 'Note:',
+  'selected time': 'Select time: {{time}}',
   days: {
     "Monday": "Monday",
     "Tuesday": "Tuesday",

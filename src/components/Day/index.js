@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Text, TouchableOpacity, ImageBackground } from "react-native";
-import image from "../../../assets/images/capsule.png";
-import CustomText from "../CustomText";
+
+import image from "@images/capsule.png";
+import CustomText from "@components/CustomText";
 
 import styles from "./styles";
 
