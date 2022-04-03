@@ -26,5 +26,29 @@ export default StyleSheet.create({
     borderColor: $black,
     borderRadius: 5,
     width: 180,
-  }
+  },
+  button: {
+    marginTop: 5,
+  },
+  selectTimeContainer: {
+    marginLeft: 10,
+    flex: 1,
+    justifyContent: "space-between",
+  },
+  text: {
+    textAlign: "center",
+  },
+  buttonsContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-end",
+    marginTop: 5,
+    flex: 1,
+  },
+  saveButton: {
+    minWidth: 80,
+  },
+  cancelButton: {
+    minWidth: 70,
+  },
 });

@@ -6,8 +6,8 @@ import CustomText from "@components/CustomText";
 
 import styles from "./styles";
 
-const Day = ({ handlePress, day }) => (
-  <TouchableOpacity onPress={handlePress}>
+const Day = ({ onPress, day }) => (
+  <TouchableOpacity onPress={onPress}>
     <View style={styles.container}>
       <ImageBackground source={image} resizeMode='cover' style={styles.image}>
         <CustomText text={`daysShort.${day.name}`} textStyle={styles.text}/>

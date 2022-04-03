@@ -3,11 +3,6 @@ import { Dimensions, StyleSheet } from "react-native";
 import { $white } from "@shared/colors";
 
 export default StyleSheet.create({
-  overlay: {
-    backgroundColor: "rgba(0,0,0,0.2)",
-    flex: 1,
-    justifyContent: "flex-end",
-  },
   container: {
     justifyContent: "space-between",
     paddingHorizontal: 20,

@@ -20,7 +20,7 @@ const BottomSheet = ({ modalHeight, bottomSheetRef, title, children, onClose }) 
         <View style={[styles.container, { height: modalHeight }]}>
           <View style={styles.header}>
             <CustomText text={title} textStyle={styles.title} />
-            <CloseButton handlePress={onClose} />
+            <CloseButton onPress={onClose} />
           </View>
           {children}
         </View>

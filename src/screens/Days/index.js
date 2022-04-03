@@ -16,7 +16,7 @@ const DaysScreen = ({ navigation, days }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-          {days.map((day) => <Day key={day.name} day={day} handlePress={() => handlePress(day)} />)}
+          {days.map((day) => <Day key={day.name} day={day} onPress={() => handlePress(day)} />)}
       </View>
     </SafeAreaView>
   );
